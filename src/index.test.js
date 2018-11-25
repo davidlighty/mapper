@@ -18,16 +18,15 @@ describe('mapper tests', () => {
     'obj.name': 'name'
   }
 
-  const expected = {
-    name: 'a',
-    prop1: 'b',
-    prop2: 'c',
-    obj: {
-      name: 'a'
-    }
-  }
-
   describe('can handle profiles', () => {
+    const expected = {
+      name: 'a',
+      prop1: 'b',
+      prop2: 'c',
+      obj: {
+        name: 'a'
+      }
+    }
     const theories = [
       { from: a, profile: mapProfile, expected },
       { from: a, profile: null, expected: {} }
@@ -44,21 +43,30 @@ describe('mapper tests', () => {
 
     it('can map with a custom function', () => {
       const profile = {
-        name: (from, to) => `${from.first} ${from.last}`
+        name: from => `${from.first} ${from.last}`
       }
       const from = {
         first: 'Bruce',
         last: 'Wayne'
       }
-      const expected = {
+      const result = {
         name: 'Bruce Wayne'
       }
       const output = mapper(from, null, profile)
-      expect(output).toEqual(expected)
+      expect(output).toEqual(result)
     })
   })
 
   describe('can handle destination object rules', () => {
+    const expected = {
+      name: 'a',
+      prop1: 'b',
+      prop2: 'c',
+      obj: {
+        name: 'a'
+      }
+    }
+
     const theories = [
       { to: {}, expected },
       { to: undefined, expected },
