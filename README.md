@@ -1,6 +1,6 @@
 # mapper
 
-[![Build Status](https://travis-ci.org/davidlighty/mapper.svg?branch=master)](https://travis-ci.org/davidlighty/mapper) [![Coverage Status](https://coveralls.io/repos/github/davidlighty/mapper/badge.svg?branch=feature%2Fcoveralls)](https://coveralls.io/github/davidlighty/mapper?branch=feature%2Fcoveralls)
+[![Build Status](https://travis-ci.org/davidlighty/mapper.svg?branch=master)](https://travis-ci.org/davidlighty/mapper) [![Coverage Status](https://coveralls.io/repos/github/davidlighty/mapper/badge.svg?branch=master)](https://coveralls.io/github/davidlighty/mapper?branch=master)
 
 Utility to map one or more objects into a new object
 
