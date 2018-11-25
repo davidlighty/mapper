@@ -1,0 +1,16 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier", "plugin:flowtype/recommended"],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "plugins": ["jest", "flowtype", "prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "no-underscore-dangle": ["error", { "allow": ["__get__"] }],
+    "linebreak-style": 0,
+    "no-default-export": true,
+    "import/prefer-default-export": false
+  }
+}
