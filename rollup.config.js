@@ -19,7 +19,7 @@ const plugins = targets => [
     // solve a problem with spread operator transpilation https://github.com/rollup/rollup/issues/281
     plugins: ['babel-plugin-transform-object-rest-spread'],
     // removes comments from output
-    comments: false
+    comments: true
   }),
   // copy Flow definitions from source to destination directory
   copy({

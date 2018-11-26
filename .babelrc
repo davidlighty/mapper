@@ -1,4 +1,4 @@
 {
-  "presets": ["env"],
+  "presets": ["env", "minify"],
   "plugins": ["transform-flow-strip-types", "babel-plugin-rewire"]
 }
